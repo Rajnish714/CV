@@ -194,7 +194,7 @@
             }
             
             .col-2 .subtitle {
-                font: 30px bold White;
+                font: 2rem bold White;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
             
@@ -229,8 +229,8 @@
             .tab-content ul li span {
                 color: rgb(124, 38, 38);
                 font-size: 1.1rem;
-                font-weight: 700;
-                padding: 1rem 0;
+                font-weight: 800;
+                /* padding: 1rem 0; */
             }
             
             .tab-content ul li {
@@ -252,8 +252,8 @@
      
            #project {
 
-                padding: 80px 0 40px 0;
-                height: 100vh;
+                padding: 80px 0 0px 0;
+                height: fit-content;
                                             
             }
                   
@@ -265,8 +265,7 @@
                 border-radius:1px;
                 height: 100%;
 
-   
-                            
+                               
             }
 
             .projects{
@@ -291,7 +290,9 @@
                 transform: scale(1.1);
             }
 
-            
+            .col-1 {
+                flex-basis: 35%;
+            }
             .layer{
                 width: 100%;
                 height: 0%;
@@ -350,12 +351,16 @@
             }
 
             .SeeMore {
+             
               
-               display: block;
            text-align: center;
            margin: 20px;
+           padding: 15px;
             }
             .SeeMore a{
+             
+                left: 0;
+                bottom: 0;
                 text-decoration: none;
                 padding: 10px;
                 font-size: 1.2rem;
@@ -384,30 +389,64 @@
             }
                      
 
+            #contact{       
+                
+                padding: 80px 0;
+                text-align: center;
+                                                           
+                    } 
+        
             #contact-list{
+                
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 grid-gap: 40px;
                 padding: 20px 0px;
                 border-radius:1px;
                 height: 100%;
+                bottom: 0;
                 
             
             }
-            .contact{
-                position: relative;
-                overflow: hidden; 
-                border-radius:10px;
+            #contact-list a{
+                font-size: 1rem;
+
+                list-style: none;
+                text-decoration: none;
+                color: aliceblue;
+                
             }
+            #contact-list a i{
+                font-size: 1rem;
+               
+                              
+            } 
  /* -------------------------------Mobile Css------------------------------------------ */
             
+
  @media screen and (max-width: 600px) {
+       
+
+    .col-2 {
+        flex-basis: 80%;
+        padding: 80px 0;
+    }
+    .container {
+         padding: 0px 10%;       
+    }
+
+    .row{
+        padding: 0;
+        margin: 0;
+    }
 
     #header{
         position: relative;
        
     }
+
     .header-area {
+
         position: absolute; 
         left: 0; 
         right: 0; 
@@ -419,8 +458,8 @@
         text-align: center;
         align-items: center;
         height: 100vh;
-               
-              
+            
+             
     }
 
     #project{
@@ -442,8 +481,7 @@ right: 0;
  }
 .header-text {
     position: relative; 
-  
-   
+     
 }
 .header-area p{
     position: absolute;
@@ -457,7 +495,7 @@ right: 0;
     #profile-pic {
       
         width: 50vw;
-                                 
+                                
     }
   
     .header-text {
@@ -472,19 +510,28 @@ right: 0;
           color: beige;
       }
 
+      .col-1{
+        display: none;
+        
+   }
    .col-1 img {
      display: none;
      
 }
-
+.row{
+   
+    justify-content: center;
+}
+.col-2{
+    width: 100%;
+   
+    margin: 0;
+}
 #project{
     margin: 0 40px;
 }
 
-.row{
-    justify-content: center;
-    margin: 0 40px;
-}
+
 #logo{
     display: none;      
 }
