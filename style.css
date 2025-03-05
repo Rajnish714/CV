@@ -469,6 +469,14 @@ nav ul li a:not(:hover)::after {
   #project {
     margin: 0 40px;
   }
+  .layer h1 {
+  font-size: 1rem;
+  margin: 10px 0 5px 0;
+}
+  .layer p {
+  margin: 10px 0;
+}
+
 
   #logo {
     display: none;
