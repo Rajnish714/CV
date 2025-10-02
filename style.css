@@ -129,7 +129,7 @@ nav ul li a:hover {
 .col-1 img {
   width: 100%;
   max-width: 300px; /* fixed width */
-  height: 400px; /* fixed height */
+  height: 100%; /* fixed height */
   object-fit: cover; /* maintain aspect ratio */
 
     shape-image-threshold: calc(0.5);
