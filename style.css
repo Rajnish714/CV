@@ -334,6 +334,19 @@ nav ul li a:not(:hover)::after {
 .SeeMore a:hover {
   color: #ff004f;
 }
+
+/* Stack projects vertically */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* space between project cards */
+}
+
+.project-list .projects {
+  width: 100%; /* each project takes full width */
+}
+
+
 /* -------------------------------Contact------------------------------------------ */
 
 #contact-list {
@@ -495,3 +508,5 @@ nav ul li a:not(:hover)::after {
     font-size: 1rem;
   }
 }
+
+/* ------------------------------- */
