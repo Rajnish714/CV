@@ -117,12 +117,13 @@ nav ul li a:hover {
   height: 400px; /* fixed height */
   object-fit: cover; /* maintain aspect ratio */
   border-radius: 15px;
-  box-shadow: 5px 0px red;
+
 }
 
 .col-2 {
   flex-basis: 60%;
   padding: 0 0 0 20px;
+    box-shadow: 5px 0px red;
 }
 
 /* Tabs */
