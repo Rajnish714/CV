@@ -296,7 +296,7 @@ nav {
   font-size: 40px;
   color: white;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
-}
+/* }
 
 #logo span {
   color: red;
@@ -310,9 +310,11 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: white; */
+  /* --------------------- */
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
-  font-size: 1.2rem;
+  /* ------------------- */
+  /* font-size: 1.2rem;
   position: relative;
 }
 
@@ -401,9 +403,9 @@ nav ul li a:not(:hover)::after {
 
 .header-text p span {
   color: red;
-}
+} */
 /* -------------------about-------------------- */
-
+/* 
 #about {
   padding: 80px 0;
   color: beige;
@@ -430,14 +432,14 @@ nav ul li a:not(:hover)::after {
 .col-2 {
   flex-basis: 60%;
   padding: 80px 0;
-}
-
+} */
+/* -------------------------------------------------- */
 /* .col-2 .subtitle {
                 font: 2rem bold White;
                 
             } */
-
-.tab-titles {
+/* ----------------------------------------------- */
+/* .tab-titles {
   display: flex;
   margin: 20px 0 40px;
 }
@@ -469,8 +471,10 @@ nav ul li a:not(:hover)::after {
   color: rgb(124, 38, 38);
   font-size: 1.1rem;
   font-weight: 800;
+  /* ------------------------------ */
   /* padding: 1rem 0; */
-}
+  /* -------------------------- */
+/* }
 
 .tab-content ul li {
   text-decoration: none;
@@ -484,10 +488,10 @@ nav ul li a:not(:hover)::after {
 
 .tab-content.active-tab {
   display: block;
-}
+}  */
 
 /* -------------------------------projects------------------------------------------ */
-
+/* 
 #project {
   padding: 80px 0 0px 0;
   height: fit-content;
@@ -646,10 +650,10 @@ nav ul li a:not(:hover)::after {
 }
 #contact-list a:hover {
   color: red;
-}
+} */
 /* -------------------------------Mobile Css------------------------------------------ */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .col-2 {
     flex-basis: 80%;
     padding: 80px 0;
@@ -765,6 +769,6 @@ nav ul li a:not(:hover)::after {
   nav ul li a {
     font-size: 1rem;
   }
-}
+} */
 
-/* ------------------------------- */ */
+/* ------------------------------- */ 
