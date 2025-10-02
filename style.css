@@ -116,7 +116,7 @@ nav ul li a:hover {
   max-width: 300px; /* fixed width */
   height: 400px; /* fixed height */
   object-fit: cover; /* maintain aspect ratio */
-  border-radius: 15px;
+
     shape-image-threshold: calc(0.5);
 
 }
@@ -124,6 +124,7 @@ nav ul li a:hover {
 .col-2 {
   flex-basis: 60%;
   padding: 0 0 0 20px;
+    border-radius: 15px;
     box-shadow: 5px 0px red;
 }
 
