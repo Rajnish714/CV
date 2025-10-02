@@ -140,7 +140,7 @@ nav ul li a:hover {
   flex-basis: 60%;
   padding: 0 0 0 20px;
     border-radius: 15px;
-    box-shadow: 5px 0px red;
+    box-shadow: -5px 0px red;
 }
 
 /* Tabs */
