@@ -139,6 +139,10 @@ nav ul li a:hover {
   box-shadow: -5px 0px red;
 }
 
+.col-2 p {
+  
+   line-height: 1.4;
+}
 /* -------------------Tabs Section-------------------- */
 .tab-titles {
   display: flex;
