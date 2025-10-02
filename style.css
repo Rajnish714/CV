@@ -121,6 +121,7 @@ nav ul li a:hover {
 
 .col-1 {
   flex-basis: 35%;
+  display: none;
 }
 
 .col-1 img {
@@ -132,7 +133,7 @@ nav ul li a:hover {
 }
 
 .col-2 {
-  flex-basis: 60%;
+  flex-basis: 100%;
   padding: 0 0 0 35px;
   border-radius: 15px;
   box-shadow: -5px 0px red;
