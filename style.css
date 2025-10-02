@@ -230,7 +230,7 @@ nav ul li a:hover {
   color: #e0e0e0;
 }
 
-.projects .links a {
+/* .projects .links a {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
@@ -244,7 +244,7 @@ nav ul li a:hover {
 .projects .links a:hover {
   background: white;
   color: #ff004f;
-}
+} */
 
 .SeeMore {
   text-align: center;
