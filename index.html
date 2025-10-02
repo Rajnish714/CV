@@ -6,6 +6,178 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>my portfolio</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<script defer src="index.js"></script>
+</head>
+
+<body>
+	<nav>
+		<h1 id="logo"><span>R</span>AJNISH </h1>
+		<ul id="nav-item">
+			<li><a href="#home" for="home">HOME</a></li>
+			<li><a href="#about" for="about">ABOUT</a></li>
+			<li><a href="#project" for="project">PROJECTS</a></li>
+			<li><a href="#contact" for="contact">CONTACT</a></li>
+		</ul>
+	</nav>
+
+	<div id="header">
+		<div class="container">
+			 <div class="header-area" id="home">
+				 <div><img id="profile-pic" src="images/profile-pic.png" alt="Profile Picture"></div>
+				<div class="header-text">
+				 <p>Hello! I am <span>RAJNISH</span>,<br>a Software Engineer</p>
+				</div>
+			 </div>
+		 </div>
+	</div>
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-1">
+					<img src="images/aboutpicture.png" alt="about-img">
+				</div>
+				<div class="col-2">
+					<h1 class="subtitle">About</h1>
+					<p>To build a career in a corporate or hi-tech environment with committed & dedicated people. Willing to contribute as a key player by putting my knowledge and skills to use in a way that will help me develop while achieving organizational goals.</p>
+
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="openTab('experience',event)">Experience</p>
+						<p class="tab-links" onclick="openTab('skills',event)">Skills</p>
+						<p class="tab-links" onclick="openTab('Education',event)">Education</p>
+					</div>
+
+					<!-- EXPERIENCE TAB -->
+					<div class="tab-content active-tab" id="experience">
+						<ul>
+							<li>
+								<strong>Flexsin Technologies — MERN Stack Developer (Internship)</strong><br>
+								Sep 2025 – Present<br>
+								Worked on a blockchain token launch platform building frontend & backend features, including GIF picker, live stream reaction bar, threaded comment-reply system, and UI/UX fixes.<br>
+								<em>Tech Stack:</em> React.js, Node.js, MongoDB, Zustand/Redux, Tailwind CSS, TypeScript
+							</li>
+						</ul>
+					</div>
+
+					<!-- SKILLS TAB -->
+					<div class="tab-content" id="skills">
+						<ul>
+							<li>HTML5 / CSS</li>
+							<li>JavaScript ES6</li>
+							<li>TypeScript</li>
+							<li>React.js</li>
+							<li>Svelte</li>
+							<li>Node.js</li>
+							<li>SQL, NoSQL</li>
+							<li>Java (Core)</li>
+							<li>Express</li>
+							<li>RESTful API</li>
+							<li>Firebase</li>
+						</ul>
+					</div>
+
+					<!-- EDUCATION TAB -->
+					<div class="tab-content" id="Education">
+						<ul>
+							<li>MCA - 2023, Master of Computer Applications from AMITY NOIDA.</li>
+							<li>BA - 2021, Indira Gandhi National Open University.</li>
+							<li>XII - 2018, Central Board of Secondary Education.</li>
+							<li>Advanced Diploma in Software Technology - NSIC</li>
+							<li>Full-Stack Web Development Certificate - Udemy</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PROJECTS SECTION -->
+	<div id="project">
+		<div class="container">
+			<h1 class="subtitle">Projects</h1>
+			<div class="project-list">
+
+				<!-- NEW PROJECT FIRST -->
+				<div class="projects">
+					 <img src="./images/work-1.png"/> <!-- add a suitable image -->
+					<div class="layer">
+						<h1>Blockchain Token Launch Platform</h1>
+						<p>Worked on a full-stack platform handling frontend and backend features for token launch, chat interactions, GIF picker, live stream reaction bar, and threaded comment-reply systems.</p>
+						<ul>
+							<li>Developed <strong>GIF picker</strong> and comment-thread features using React components.</li>
+							<li>Built <strong>reaction & reporting systems</strong> and animated live stream UIs.</li>
+							<li>Fixed <strong>UI/UX issues</strong> and aligned frontend to Figma designs.</li>
+							<li>Enhanced <strong>state management</strong> and backend integration with Node.js and MongoDB.</li>
+						</ul>
+						<div class="links"><span ><a href="#"><i class="fa-solid fa-link"></i></a></span></div>
+					</div>
+				</div>
+
+				<!-- EXISTING PROJECTS -->
+				<div class="projects">
+					<img src="./images/work-1.png"/>
+					<div class="layer">
+						<h1>NASA MISSION CONTROL </h1>
+						<p>A full-stack space exploration app using Node.js, Express, and React.
+							It leverages the SpaceX API to track missions, 
+							manage launches, and showcase habitable planets. Deployed via Docker on AWS EC2.</p>
+							<div class="links"><span ><a href="https://nasa-mission-control-5l1r.onrender.com/"><i class="fa-solid fa-link"></i></a></span></div>
+					</div>
+				</div>
+
+				<div class="projects">
+					<img src="./images/work-2.png"/>
+					<div class="layer">
+						<h1>Secret Whisper  </h1>
+						<p>This is a web app in which people can share their secrets anonymously. This 
+							is developed using technology like Express, Node, EJS, and Google OAuth Passport Package.
+					</p>
+						<div class="links"><span > <a href="https://github.com/Rajnish714/OurSecrets"><i class="fa-solid fa-link"></i></a></span></div>
+					</div>
+				</div>
+
+				<div class="projects">
+					 <img src="./images/work-3.png"/>
+					<div class="layer">
+						<h1>FoodNutri</h1>
+						<p>It is a long-established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						<div class="links"><span ><a href="https://github.com/Rajnish714/FoodNutri"><i class="fa-solid fa-link"></i></a></span></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="SeeMore"><span ><a href="https://github.com/Rajnish714?tab=repositories">See More</a></span></div>
+		</div>
+	</div>
+
+	<div id="contact">
+		<div class="container">
+			<h1 class="subtitle">Contact</h1>
+			<div id="contact-list">
+				<div class="contact"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=srajnish714@gmail.com" target="_blank">Mail <span> <i class="fa-solid fa-envelope"> </i></span></a> </div>
+				<div class="contact"><a href="https://www.instagram.com/rajnish_21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> Instagram <span><i class="fa-brands fa-instagram"></i></span></a></div>
+				<div class="contact"><a href="https://github.com/Rajnish714">Github  <span><i class="fa-brands fa-github"></i></span></a></div>
+				<div class="contact"><a href="assets/Resume.pdf" download="CV.pdf">Download CV <span><i class="fa-solid fa-download"></i></span></a></div>
+				<div class="contact"><a href="https://www.linkedin.com/in/rajnish-sharma-a78612187">Linkedin  <span><i class="fa-brands fa-linkedin"></i></span></a></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my portfolio</title>
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
 	/>
 	<script defer src="index.js"></script>
@@ -151,4 +323,4 @@
 		
 			</div>
 		
-</html>
+</html> -->
