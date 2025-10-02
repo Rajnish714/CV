@@ -249,6 +249,17 @@ nav ul li a:hover {
 .SeeMore {
   text-align: center;
   margin: 20px;
+ 
+}
+
+
+.SeeMore a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.SeeMore a:hover {
+   color: red;
 }
 
 /* -------------------Contact-------------------- */
@@ -264,7 +275,7 @@ nav ul li a:hover {
   color: aliceblue;
 }
 
-#contact-list a:hover {
+#contact-list a: hover {
   color: red;
 }
 
