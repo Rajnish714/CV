@@ -16,6 +16,394 @@ body {
   color: white;
   font-family: Popins, sans-serif;
 }
+
+#btn {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(27, 27, 27);
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 2;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+}
+
+#logo {
+  font-size: 40px;
+  color: white;
+}
+
+#logo span {
+  color: red;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+nav ul li a:hover {
+  left: 0;
+  color: rgb(190, 188, 188);
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgb(235, 7, 7);
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  color: grey;
+  transition: 0.3s;
+}
+
+nav ul li a:not(:hover)::after {
+  width: 0%;
+  color: grey;
+  transition: 0.3s ease-in-out;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0px 10%;
+}
+
+#header .container {
+  padding: 0px 10%;
+}
+
+.header-area {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#profile-pic {
+  width: 80%;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+#profile-pic:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px red;
+}
+
+#profile-pic:not(:hover) {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.header-text {
+  bottom: 20%;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.header-text p span {
+  color: red;
+}
+
+/* -------------------about-------------------- */
+#about {
+  padding: 80px 0;
+  color: beige;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  flex-basis: 35%;
+}
+
+.col-1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  shape-image-threshold: calc(0.5);
+  box-shadow: 5px 0px red;
+}
+
+.col-2 {
+  flex-basis: 60%;
+  padding: 80px 0;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-titles .tab-links {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0px;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-content ul li span {
+  color: rgb(124, 38, 38);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.tab-content ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active-tab {
+  display: block;
+}
+
+/* -------------------------------projects vertical style------------------------------------------ */
+#project {
+  padding: 80px 0;
+  height: fit-content;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects {
+  background: rgba(50, 50, 50, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.projects img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.projects h1 {
+  font-size: 1.8rem;
+  color: #ff004f;
+}
+
+.projects p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.projects .links a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: 6px;
+  color: white;
+  transition: 0.3s;
+}
+
+.projects .links a:hover {
+  background: white;
+  color: #ff004f;
+}
+
+.SeeMore {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+}
+
+.SeeMore a {
+  left: 0;
+  bottom: 0;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid;
+  border-radius: 10px;
+  list-style: none;
+  color: white;
+}
+
+.SeeMore a:hover {
+  color: #ff004f;
+}
+
+/* -------------------------------Contact------------------------------------------ */
+#contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 40px;
+  padding: 20px 0px;
+  border-radius: 1px;
+  height: 100%;
+  bottom: 0;
+}
+
+#contact-list a {
+  font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#contact-list a i {
+  font-size: 1rem;
+}
+
+#contact-list a:hover {
+  color: red;
+}
+
+/* -------------------------------Mobile Css------------------------------------------ */
+@media screen and (max-width: 600px) {
+  .col-2 {
+    flex-basis: 80%;
+    padding: 80px 0;
+  }
+
+  .container {
+    padding: 0px 10%;
+  }
+
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+
+  #header {
+    position: relative;
+  }
+
+  .header-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #profile-pic {
+    width: 50vw;
+  }
+
+  .header-text {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .col-1 {
+    display: none;
+  }
+  .row {
+    justify-content: center;
+  }
+  .col-2 {
+    width: 100%;
+    margin: 0;
+  }
+  #project {
+    margin: 0 10px;
+  }
+}
+
+
+
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: red transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background: rgb(27, 27, 27);
+  color: white;
+  font-family: Popins, sans-serif;
+}
 #btn {
   display: none;
 }
@@ -509,4 +897,4 @@ nav ul li a:not(:hover)::after {
   }
 }
 
-/* ------------------------------- */
+/* ------------------------------- */ */
