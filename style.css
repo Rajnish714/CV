@@ -1,4 +1,119 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background: #1b1b1b;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+#logo {
+  font-size: 32px;
+}
+
+#logo span {
+  color: red;
+}
+
+#nav-item {
+  display: flex;
+}
+
+#nav-item li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+#nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* HAMBURGER */
+#menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* HEADER */
+#header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-area {
+  text-align: center;
+}
+
+#profile-pic {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.header-text span {
+  color: red;
+}
+
+/* PROJECTS */
+.projects {
+  margin-top: 20px;
+}
+
+.projects img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #nav-item {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #nav-item li {
+    margin: 15px 0;
+  }
+
+  #nav-item.active {
+    display: flex;
+  }
+}
+/* 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
@@ -330,7 +445,7 @@ nav ul li a:hover {
   #nav-item.active {
     display: flex;
   }
-}
+} */
 
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
