@@ -15,14 +15,6 @@ function openTab(tabname, event) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const navItem = document.getElementById("nav-item");
-
-  menuToggle.addEventListener("click", () => {
-    navItem.classList.toggle("active");
-  });
-});
 
 // ----------------------
 // let slideIndex = 1;
