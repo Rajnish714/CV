@@ -1,8 +1,6 @@
 
-
 const tablinks = document.getElementsByClassName("tab-links");
 const tabcontents = document.getElementsByClassName("tab-content");
-
 function openTab(tabname, event) {
   for (const tablink of tablinks) {
     tablink.classList.remove("active-link");
@@ -10,11 +8,16 @@ function openTab(tabname, event) {
   for (const tabcontent of tabcontents) {
     tabcontent.classList.remove("active-tab");
   }
-
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
-
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navItem = document.getElementById("nav-item");
+  menuToggle.addEventListener("click", () => {
+    navItem.classList.toggle("active");
+  });
+});
 
 // ----------------------
 // let slideIndex = 1;
